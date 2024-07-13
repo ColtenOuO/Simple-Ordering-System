@@ -1,0 +1,144 @@
+/* 基本页面样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 头部样式 */
+.header {
+    display: flex;
+    justify-content: space-between; /* 两端对齐，元素之间的空间均分 */
+    align-items: center; /* 垂直居中所有子元素 */
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+}
+
+/* 按钮的基本设置 */
+.menu-button, .button-56 {
+    margin: 10px;
+}
+
+/* h1 标题样式 */
+h1 {
+    font-size: 24px; /* 或您想要的任何大小 */
+}
+
+/* 时间显示样式 */
+#time {
+    font-size: 24px; /* 设置与 h1 相同的字体大小 */
+    text-align: right;
+    font-weight: bold;
+}
+
+/* 菜单按钮的特定样式 */
+.menu {
+    display: flex;
+    justify-content: flex-start; /* 按钮靠左对齐 */
+    align-items: center; /* 垂直居中 */
+}
+
+.button-56 {
+    font-weight: bold;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    width: 30%; /* 设置宽度 */
+    min-width: 150px; /* 最小宽度 */
+    height: 100px; /* 固定高度 */
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 15px;
+}
+
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 100px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #fee6e3; 
+    color: #111;
+    border: 2px solid #111;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.custom-button:hover {
+    background-color: #fdd; 
+}
+
+.custom-button:active {
+    background-color: #cfe9d0;
+}
+
+.custom-button {
+    background-color: #fee6e3;  /* 原始颜色 */
+    transition: background-color 0.3s ease;  /* 平滑过渡效果 */
+}
+
+.custom-button.toggled {
+    background-color: #cfe9d0;  /* 点击后的颜色 */
+}
+
+.modal.fade .modal-dialog {
+    transition: transform 0.3s ease-out;
+    transform: translateY(-10%);
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+}
+
+
+
+/* 小屏幕的媒体查询 */
+@media (max-width: 768px) {
+    .button-56 {
+        width: 45%; /* 在较小屏幕上调整按钮宽度 */
+        padding: 0 20px; /* 调整内边距以适应较小的显示 */
+    }
+}
