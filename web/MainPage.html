@@ -21,7 +21,7 @@
         <button class="button-56" role="button">湯類</button>
     </div>
     <div class="menu bento" id="bento" style="display: none;">
-        <button class="button-56" role="button">火雞肉便當</button>
+        <button class="button-56" role="button" onclick="show()">火雞肉便當</button>
         <button class="button-56" role="button">肉燥飯便當</button>
         <button class="button-56" role="button">吳郭魚便當</button>
         <button class="button-56" role="button">香腸便當</button>
@@ -32,17 +32,23 @@
         <div class="modal-dialog">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">客製化選項</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ...
+                <div class="modal-button">
+                    <button class="topic-button toggleButton E" role="button">加飯</button>
+                    <button class="topic-button toggleButton F" role="button">飯少</button>
+                    <button class="topic-button toggleButton C" role="button">不要油蔥酥</button>
+                    <button class="topic-button toggleButton G" role="button">醬汁多一點</button>
+                    <button class="topic-button toggleButton Q" role="button">醬汁少一點</button>
+                </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">加入購物車</button>
             </div>
             </div>
         </div>

@@ -3,6 +3,14 @@ function show() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    
+    const buttons = document.querySelectorAll(".toggleButton");
+    buttons.forEach(button => {
+        button.addEventListener("click", function() {
+            this.classList.toggle("active-button");
+        });
+    });
+    
     var bentoButton = document.querySelector('.menu button:nth-child(3)'); // 選取便當類按鈕
     var bentoDiv = document.getElementById('bento'); // 選取便當類型的 div
 
